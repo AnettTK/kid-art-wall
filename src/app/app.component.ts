@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NgxMasonryModule } from 'ngx-masonry';
 
 @Component({
   selector: 'app-root',

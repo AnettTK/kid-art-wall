@@ -1,0 +1,27 @@
+img {
+    height: 400px;
+    width: auto;
+}
+
+div[ngxMasonry] {
+    display: flex;
+    gap: 10px; 
+}
+
+div[ngxMasonryItem] {
+    flex: 1; 
+}
+
+div[ngxMasonryItem] img {
+    width: 100%; 
+    height: auto; 
+}
+
+body {
+    background-color: #EAE0DA; 
+}
+
+h1 {
+    color: #957DAD;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
