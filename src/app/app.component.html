@@ -1,22 +1,12 @@
 <main class="main">
-    <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>My kid's art wall</title>
-        </head>
-        <body>
-            <header>
-                <h1>My little artist</h1>
-            </header>
-            <div ngxMasonry>
-                <div ngxMasonryItem *ngFor="let image of images">
-                    <img [src]="image.src" [alt]="image.alt">
-                </div>
+    <header>
+        <h1>My little artist</h1>
+    </header>
+        <div ngxMasonry>
+            <div ngxMasonryItem *ngFor="let image of images">
+                <img [src]="image.src" [alt]="image.alt">
             </div>
-        </body>
-        </html>
+        </div>
 </main>
 
 <router-outlet />
