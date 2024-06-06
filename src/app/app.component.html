@@ -11,14 +11,8 @@
                 <h1>My little artist</h1>
             </header>
             <div ngxMasonry>
-                <div ngxMasonryItem>
-                    <img src="/assets/img/christmas.jpg" alt="Image 1">
-                </div>
-                <div ngxMasonryItem>
-                    <img src="/assets/img/easter_bunnies.jpg" alt="Image 2">
-                </div>
-                <div ngxMasonryItem>
-                    <img src="/assets/img/spring_bird.jpg" alt="Image 3">
+                <div ngxMasonryItem *ngFor="let image of images">
+                    <img [src]="image.src" [alt]="image.alt">
                 </div>
             </div>
         </body>
